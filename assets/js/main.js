@@ -51,7 +51,7 @@ premium.addEventListener("click", (pr) =>{
 })
 
 const langToggle = document.querySelector("#lang-toggle");
-let currentLang = "es";
+let currentLang = "en";
 
 langToggle.addEventListener("click", () => {
   if (currentLang === "es") {
