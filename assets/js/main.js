@@ -3,55 +3,60 @@ const about = document.querySelector("#about");
 const price = document.querySelector("#price");
 const contact = document.querySelector("#contact");
 
-//
+// Memberships
 const basic = document.querySelector("#basic");
 const standard = document.querySelector("#standard");
 const premium = document.querySelector("#premium");
 
-home.addEventListener("click", (h) =>{
-    h.preventDefault();
-    const sectionH = document.querySelector(".hero");
-    sectionH.scrollIntoView({behavior:"smooth"});
-})
+home.addEventListener("click", (h) => {
+  h.preventDefault();
+  const sectionH = document.querySelector(".hero");
+  sectionH.scrollIntoView({ behavior: "smooth" });
+});
 
-about.addEventListener("click", (a) =>{
-    a.preventDefault();
-    const sectionA = document.querySelector(".about");
-    sectionA.scrollIntoView({behavior:"smooth"});
-})
+about.addEventListener("click", (a) => {
+  a.preventDefault();
+  const sectionA = document.querySelector(".about");
+  sectionA.scrollIntoView({ behavior: "smooth" });
+});
 
-price.addEventListener("click", (p) =>{
-    p.preventDefault();
-    const sectionP = document.querySelector(".membership");
-    sectionP.scrollIntoView({behavior:"smooth"});
-})
+price.addEventListener("click", (p) => {
+  p.preventDefault();
+  const sectionP = document.querySelector(".membership");
+  sectionP.scrollIntoView({ behavior: "smooth" });
+});
 
-contact.addEventListener("click", (c) =>{
-    c.preventDefault();
-    const sectionC = document.querySelector(".contact");
-    sectionC.scrollIntoView({behavior:"smooth"});
-})
+contact.addEventListener("click", (c) => {
+  c.preventDefault();
+  const sectionC = document.querySelector(".contact");
+  sectionC.scrollIntoView({ behavior: "smooth" });
+});
 
-basic.addEventListener("click", (b) =>{
-    b.preventDefault();
-    const sectionB = document.querySelector(".basic");
-    sectionB.scrollIntoView({behavior:"smooth"});
-})
+basic.addEventListener("click", (b) => {
+  b.preventDefault();
+  const sectionB = document.querySelector(".basic");
+  sectionB.scrollIntoView({ behavior: "smooth" });
+});
 
-standard.addEventListener("click", (s) =>{
-    s.preventDefault();
-    const sectionS = document.querySelector(".standard");
-    sectionS.scrollIntoView({behavior:"smooth"});
-})
+standard.addEventListener("click", (s) => {
+  s.preventDefault();
+  const sectionS = document.querySelector(".standard");
+  sectionS.scrollIntoView({ behavior: "smooth" });
+});
 
-premium.addEventListener("click", (pr) =>{
-    pr.preventDefault();
-    const sectionP = document.querySelector(".premium");
-    sectionP.scrollIntoView({behavior:"smooth"});
-})
+premium.addEventListener("click", (pr) => {
+  pr.preventDefault();
+  const sectionP = document.querySelector(".premium");
+  sectionP.scrollIntoView({ behavior: "smooth" });
+});
+
+let currentLang = "en";
+
+document.addEventListener("DOMContentLoaded", () => {
+  switchToEnglish();
+});
 
 const langToggle = document.querySelector("#lang-toggle");
-let currentLang = "en";
 
 langToggle.addEventListener("click", () => {
   if (currentLang === "es") {
@@ -65,12 +70,12 @@ langToggle.addEventListener("click", () => {
   }
 });
 
-
 function switchToEnglish() {
     document.querySelector("#home").textContent = "Home";
     document.querySelector("#about").textContent = "About Us";
     document.querySelector("#price").textContent = "Prices";
     document.querySelector("#contact").textContent = "Contact";
+    document.querySelector("#titleBanner").textContent = "Improve your programming skills";
     document.querySelector("#txtBanner").textContent = "We have top tutors to help you enhance your knowledge.";
     document.querySelector(".btnBanner").textContent = "ENROLL";
     document.querySelector("#INSCRIBIRME").textContent = "ENROLL";
@@ -127,12 +132,13 @@ function switchToEnglish() {
     // Footer Section
     document.querySelector("small").innerHTML = "<br><br>Copyright &copy; 2024 - TutorMatch - SkillSwap Inc.";
 }
-  
+
 function switchToSpanish() {
     document.querySelector("#home").textContent = "Inicio";
     document.querySelector("#about").textContent = "Acerca de nosotros";
     document.querySelector("#price").textContent = "Precios";
     document.querySelector("#contact").textContent = "Contacto";
+    document.querySelector("#titleBanner").textContent = "Mejora tus habilidades en programación";
     document.querySelector("#txtBanner").textContent = "Contamos con destacados tutores que te enseñarán todo lo que necesitas para potenciar tus conocimientos.";
     document.querySelector(".btnBanner").textContent = "INSCRIBIRME";
     document.querySelector("#INSCRIBIRME").textContent = "INSCRIBIRME";
