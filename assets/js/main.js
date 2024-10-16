@@ -92,11 +92,11 @@ function switchToEnglish() {
 
     // About Section
     document.querySelectorAll(".about-box p")[0].textContent = "A platform that enables students to find qualified tutors who can assist them in their specific courses, organized by term and specialty. TutorMatch facilitates the connection between students, optimizing the learning process and helping improve academic performance in key subjects.";
-    document.querySelectorAll(".about-box h2")[0].innerHTML = '<span style="color:white">Students with </span><span style="color: #E33D3D;"> academic </span><span style="color:white"> difficulties </span>';
-    document.querySelectorAll(".about-box h2")[1].textContent = "academic difficulties";
+    document.querySelectorAll(".about-box h2")[0].innerHTML = '<span style="color:white">Students with </span><span style="color: black;">academic difficulties</span>';
+  
     document.querySelectorAll(".about-box p")[1].textContent = "This segment covers Software Engineering students at UPC facing challenges in specific courses, seeking additional support to improve their understanding and academic performance. These students may need reinforcement in technical concepts, project guidance, or exam preparation. TutorMatch offers them an accessible platform where they can find specialized tutors by cycle and subject, helping them improve their performance effectively.";
-    document.querySelectorAll(".about-box h2")[2].innerHTML = '<span style="color:white">Students with </span><span style="color: #E33D3D;"> outstanding </span><span style="color:white"> skills </span>';
-    document.querySelectorAll(".about-box h2")[3].textContent = "outstanding skills";
+    document.querySelectorAll(".about-box h2")[1].innerHTML = '<span style="color:white">Students with </span><span style="color: black;">outstanding skills</span>';
+  
     document.querySelectorAll(".about-box p")[2].textContent = "These are students with solid mastery in certain areas of Software Engineering who wish to share their knowledge with other students through tutoring. TutorMatch offers them the opportunity to gain teaching experience, improve their resumes, and, in some cases, earn income. This benefits them by refining their communication, teaching, and leadership skills from a personal and professional growth perspective.";
 
     // Memberships Section
@@ -155,11 +155,11 @@ function switchToSpanish() {
 
     // Sección Acerca de Nosotros
     document.querySelectorAll(".about-box p")[0].textContent = "Una plataforma que permite a los estudiantes encontrar tutores capacitados que puedan ayudarlos en cursos específicos de su carrera. TutorMatch facilita la conexión entre estudiantes, optimizando el aprendizaje y ayudando a mejorar el rendimiento académico.";
-    document.querySelectorAll(".about-box h2")[0].innerHTML = '<span style="color:white">Estudiantes con </span><span style="color: #E33D3D;">dificultades </span>';
-    document.querySelectorAll(".about-box h2")[1].textContent = "académicas";
+    document.querySelectorAll(".about-box h2")[0].innerHTML = '<span style="color:white">Estudiantes con </span><span style="color: black;">dificultades académicas</span>';
+  
     document.querySelectorAll(".about-box p")[1].textContent = "Este segmento incluye a estudiantes de Ingeniería de Software que enfrentan retos académicos en cursos específicos y buscan apoyo adicional. TutorMatch les ofrece una plataforma donde pueden encontrar tutores especializados para mejorar su rendimiento.";
-    document.querySelectorAll(".about-box h2")[2].innerHTML = '<span style="color:white">Estudiantes con </span><span style="color: #E33D3D;">habilidades </span>';
-    document.querySelectorAll(".about-box h2")[3].textContent = "destacadas";
+    document.querySelectorAll(".about-box h2")[1].innerHTML = '<span style="color:white">Estudiantes con </span><span style="color: black;">habilidades destacadas</span>';
+  
     document.querySelectorAll(".about-box p")[2].textContent = "Son estudiantes con un gran dominio en áreas específicas de Ingeniería de Software que desean compartir sus conocimientos a través de tutorías. TutorMatch les permite obtener experiencia docente y mejorar su perfil profesional.";
 
     // Sección Membresías de Tutor
