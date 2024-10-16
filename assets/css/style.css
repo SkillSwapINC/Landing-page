@@ -209,6 +209,10 @@
     background: linear-gradient(101deg, #FFFFFF 0%, #555555 100%);
 }
 
+.tutorImg{
+  margin-left:250px;
+}
+
 
 /**/
 .membership-banner-container {
@@ -406,6 +410,22 @@
     color: #EEEEEE;
 }
 
+.imga1{
+  margin-top: -200px;
+  margin-left:50px;
+  width: 190px;
+}
+
+.imga2{
+  margin-left:120px;
+  width: 150px;
+}
+
+.imga3{
+  margin-left: 110px;
+  width: 190px;
+}
+
 /*CONTACT*/
 .contact{
     display: flex;
@@ -531,3 +551,149 @@ textarea::placeholder {
     small {
       font-size: 15px;
     }
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  /* Header */
+  .header {
+    padding: 1rem 5%;
+  }
+
+  .navbar a {
+    margin-left: 0;
+    padding: 0.5rem 0;
+  }
+
+  /* Hero section */
+  .banner {
+    margin-top: 20px;
+    height: auto;
+    padding: 4rem 1rem;
+  }
+
+  .containerH {
+    grid-template-columns: 1fr;
+  }
+
+  .col2 {
+    padding: 1rem 0;
+  }
+
+  .banner h1 {
+    font-size: 1.8rem;
+  }
+
+  #txtBanner {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .btnBanner {
+    padding: 0.8rem 2rem;
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .tutorImg{
+    margin-left:50px;
+  }
+  
+
+  /* Membership banner */
+  .membership-banner-container {
+    height: auto;
+  }
+
+  .containerP {
+    grid-template-columns: 1fr;
+  }
+
+  .boxP-Title h3 {
+    font-size: 36px;
+  }
+
+  .boxP-Title p {
+    font-size: 20px;
+  }
+
+  /* About section */
+  .about-box h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-box p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  /* Membership section */
+  .membership-back h2 {
+    font-size: 32px;
+  }
+
+  .boxM h3 {
+    font-size: 1.8rem;
+  }
+
+  .boxM li {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .imga1{
+    margin-top: -10px;
+    margin-left:70px;
+    width: 100px;
+  }
+  
+  .imga2{
+    margin-left:90px;
+    width: 150px;
+  }
+  
+  .imga3{
+    margin-left: 70px;
+    width: 190px;
+  }
+
+
+  /* Contact form */
+  .titulo {
+    font-size: 28px;
+  }
+
+  .parrafo {
+    font-size: 16px;
+  }
+
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+  }
+
+  .form button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner h1 {
+    font-size: 1.5rem;
+  }
+
+  .boxP-Title h3 {
+    font-size: 28px;
+  }
+
+  .boxP-Title p {
+    font-size: 18px;
+  }
+
+  .membership-back h2 {
+    font-size: 28px;
+  }
+}
