@@ -70,6 +70,28 @@ langToggle.addEventListener("click", () => {
   }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+  const aboutLink = document.getElementById('about');
+  const videoPopup = document.getElementById('videoPopup');
+  const closeVideo = document.getElementById('closeVideo');
+  const aboutVideo = document.getElementById('aboutVideo');
+
+  aboutLink.addEventListener('click', function (e) {
+    e.preventDefault();
+    const aboutSection = document.querySelector('.about');
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    videoPopup.style.display = 'flex';
+  });
+
+  closeVideo.addEventListener('click', function () {
+    videoPopup.style.display = 'none';
+    aboutVideo.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
+  });
+});
+
+
 function switchToEnglish() {
     document.querySelector("#home").textContent = "Home";
     document.querySelector("#about").textContent = "About Us";
@@ -89,6 +111,10 @@ function switchToEnglish() {
     document.querySelectorAll(".details")[0].textContent = "See details";
     document.querySelectorAll(".details")[1].textContent = "See details";
     document.querySelectorAll(".details")[2].textContent = "See details";
+
+    // Video Section
+    document.querySelector("#discover").textContent = "Discover TutorMatch";
+    document.querySelector("#about-title").textContent = "About Us";
 
     // About Section
     document.querySelectorAll(".about-box p")[0].textContent = "A platform that enables students to find qualified tutors who can assist them in their specific courses, organized by term and specialty. TutorMatch facilitates the connection between students, optimizing the learning process and helping improve academic performance in key subjects.";
@@ -152,6 +178,10 @@ function switchToSpanish() {
     document.querySelectorAll(".details")[0].textContent = "Ver detalles";
     document.querySelectorAll(".details")[1].textContent = "Ver detalles";
     document.querySelectorAll(".details")[2].textContent = "Ver detalles";
+
+    // Videos
+    document.querySelector("#discover").textContent = "Descubre TutorMatch";
+    document.querySelector("#about-title").textContent = "Acerca de nosotros";
 
     // Sección Acerca de Nosotros
     document.querySelectorAll(".about-box p")[0].textContent = "Una plataforma que permite a los estudiantes encontrar tutores capacitados que puedan ayudarlos en cursos específicos de su carrera. TutorMatch facilita la conexión entre estudiantes, optimizando el aprendizaje y ayudando a mejorar el rendimiento académico.";
