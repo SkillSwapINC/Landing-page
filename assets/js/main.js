@@ -87,7 +87,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   closeVideo.addEventListener('click', function () {
     videoPopup.style.display = 'none';
-    // Detener el video al cerrar
     aboutVideo.contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*');
   });
 });
